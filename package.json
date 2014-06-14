@@ -1,0 +1,29 @@
+{
+  "name": "fluent-d-sample",
+  "version": "0.0.0",
+  "description": "sample for fluent-d use",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/martinheidegger/opsworks-fluentd-nodejs-sample.git"
+  },
+  "keywords": [
+    "fluent-d",
+    "example"
+  ],
+  "author": "Martin Heidegger <martin.heidegger@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martinheidegger/opsworks-fluentd-nodejs-sample/issues"
+  },
+  "homepage": "https://github.com/martinheidegger/opsworks-fluentd-nodejs-sample",
+  "dependencies": {
+    "fluent-logger": "~0.2.6",
+    "express": "~4.4.3"
+  }
+}

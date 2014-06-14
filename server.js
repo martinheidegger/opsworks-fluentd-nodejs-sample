@@ -41,18 +41,18 @@ app.get('/start', function (req, res) {
         };
     }, 100);
     monitorRps(rps);
-    res.send("OK");
+    res.send("STARTED");
 });
 
 app.get('/stop', function (req, res) {
     stopSendInterval();
     monitorRps(0);
-    res.send("OK");
+    res.send("STOPPED");
 });
 
 app.get('/err', function (req, res) {
     fatal.emit("error", {message:"This is a horrible error", stack: new Error().stack});
-    res.send("OK");
+    res.send("ERROR SENT");
 });
 
 app.listen(80);
